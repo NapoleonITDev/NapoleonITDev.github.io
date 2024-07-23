@@ -4,7 +4,7 @@ import shapeOne from '../../asserts/shape-1.png';
 import './contact.css';
 import Snackbar from '../snackbar/Snackbar';
 import { useTranslation, Trans } from 'react-i18next';
-
+import { motion } from 'framer-motion';
 
 const Contact = () => {
     const [t] = useTranslation();
@@ -67,36 +67,62 @@ const Contact = () => {
             </p>
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <div className="contact__card">
+                    <motion.div
+                        className="contact__card"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1 }}
+                    >
                         <span className="contact__card-icon">
                             <FaRegMap />
                         </span>
                         <h3 className="contact__card-title">{t('contacts.card.address')}</h3>
                         <p className="contact__card-data">Porto, Rua da Rasa 734</p>
-                    </div>
-                    <div className="contact__card">
+                    </motion.div>
+                    <motion.div
+                        className="contact__card"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                    >
                         <span className="contact__card-icon">
                             <FaRegUser />
                         </span>
                         <h3 className="contact__card-title">CEO</h3>
                         <p className="contact__card-data">Nikita Permikov</p>
-                    </div>
-                    <div className="contact__card">
+                    </motion.div>
+                    <motion.div
+                        className="contact__card"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
+                    >
                         <span className="contact__card-icon">
                             <FaRegEnvelope />
                         </span>
                         <h3 className="contact__card-title">Email</h3>
                         <p className="contact__card-data">permikov134@yandex.ru</p>
-                    </div>
-                    <div className="contact__card">
+                    </motion.div>
+                    <motion.div
+                        className="contact__card"
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
+                    >
                         <span className="contact__card-icon">
                             <FaRegAddressBook />
                         </span>
                         <h3 className="contact__card-title">{t('contacts.card.phone')}</h3>
                         <p className="contact__card-data">+351 964-302-699</p>
-                    </div>
+                    </motion.div>
                 </div>
-                <form className="contact__form" onSubmit={handleSubmit}>
+                <motion.form
+                    className="contact__form"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    onSubmit={handleSubmit}
+                >
                     <div className="contact__form-group grid">
                         <div className="contact__form-div">
                             <label className="contact__form-tag text-cs">
@@ -156,7 +182,7 @@ const Contact = () => {
                             {t('contacts.contact.send')}
                         </button>
                     </div>
-                </form>
+                </motion.form>
                 <Snackbar
                     ref={snackbarRef}
                     message={snackbarType === "success" ? t('contacts.snackbar.send') : t('contacts.snackbar.failed')}
