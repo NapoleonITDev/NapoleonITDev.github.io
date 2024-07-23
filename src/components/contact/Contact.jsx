@@ -5,6 +5,7 @@ import './contact.css';
 import Snackbar from '../snackbar/Snackbar';
 import { useTranslation, Trans } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
     const [t] = useTranslation();
@@ -59,6 +60,11 @@ const Contact = () => {
 
     const snackbarRef = useRef(null);
 
+    const { ref: ref, inView: inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1
+    });
+
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title text-cs">{t('contacts.title')}</h2>
@@ -68,10 +74,11 @@ const Contact = () => {
             <div className="contact__container container grid">
                 <div className="contact__content">
                     <motion.div
+                        ref={ref}
                         className="contact__card"
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
+                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
+                        transition={{ duration: 0.8 }}
                     >
                         <span className="contact__card-icon">
                             <FaRegMap />
@@ -80,9 +87,10 @@ const Contact = () => {
                         <p className="contact__card-data">Porto, Rua da Rasa 734</p>
                     </motion.div>
                     <motion.div
+                        ref={ref}
                         className="contact__card"
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <span className="contact__card-icon">
@@ -92,10 +100,11 @@ const Contact = () => {
                         <p className="contact__card-data">Nikita Permikov</p>
                     </motion.div>
                     <motion.div
+                        ref={ref}
                         className="contact__card"
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
+                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
+                        transition={{ duration: 0.8, delay: 0.4 }}
                     >
                         <span className="contact__card-icon">
                             <FaRegEnvelope />
@@ -104,10 +113,11 @@ const Contact = () => {
                         <p className="contact__card-data">permikov134@yandex.ru</p>
                     </motion.div>
                     <motion.div
+                        ref={ref}
                         className="contact__card"
                         initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
+                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
+                        transition={{ duration: 0.8, delay: 0.6 }}
                     >
                         <span className="contact__card-icon">
                             <FaRegAddressBook />
@@ -117,10 +127,11 @@ const Contact = () => {
                     </motion.div>
                 </div>
                 <motion.form
+                    ref={ref}
                     className="contact__form"
                     initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
+                    transition={{ duration: 2 }}
                     onSubmit={handleSubmit}
                 >
                     <div className="contact__form-group grid">
