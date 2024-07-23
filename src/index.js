@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 
 import translation_en from './translations/en.json';
 import translation_de from './translations/de.json';
@@ -37,5 +36,3 @@ root.render(
     </I18nextProvider>
   </React.StrictMode>
 );
-
-reportWebVitals();
