@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "home": {
+            "subtitle": "Wir bieten <s>Entwicklung</s> und <s>Automatisierung</s> an",
+            "data": {
+                "one": "Jahre <s>Erfahrung</s>",
+                "two": "fertige <s>Projekte</ы>",
+                "three": "einzigartige <s>Kunden</s>"
+            },
+            "text": {
+                "1": "Wir entwickeln jede Webanwendung mit <b>Django</b> und <b>React</b>",
+                "2": "<b>CI / CD</b> entwickeln und Infrastruktur bereitstellen",
+                "3": "Das Projekt mit automatisierten Tests <b>(E2E, Integration und Unit)</b> abdecken",
+                "4": "Allgemeine Testmodule, Mocks und Dienste für Tests hinzufügen"
+            },
+            "bg_title": "Entwicklung"
+        },
+        "services": {
+            "title": "Was machen wir",
+            "subtitle": "Unsere <s>Dienstleistungen</s>",
+            "pricing": "Preise Ansehen",
+            "bg_title": "Dienstleistungen"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "Unsere <s>Bestellungen</s>",
+            "bg_title": "Portfolio",
+            "items": {
+                "pricing": "Preise Ansehen"
+            }
+        },
+        "testimonials": {
+            "title": "Bewertungen",
+            "subtitle": "Unser <s>Feedback</s>",
+            "bg_title": "Bewertungen"
+        },
+        "data": {
+            "header": {
+                "home": "Startseite",
+                "services": "Dienstleistungen",
+                "portfolio": "Portfolio",
+                "testimonials": "Referenzen",
+                "pricing": "Preise",
+                "blog": "Blog",
+                "contact": "Kontakt"
+            }
+        },
+        "pricing": {
+            "title": "Preise",
+            "subtitle": "Unsere <s>Kosten</s>",
+            "label": "Beliebt",
+            "bg_title": "Preise",
+            "btn": "Projekt starten"
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Unsere <s>Artikel</s>",
+            "bg_title": "Blog",
+            "link": "Mehr lesen"
+        },
+        "contacts": {
+            "title": "Kontakte",
+            "subtitle": "Teilen Sie mir <s>Ihre Anfrage</s> mit",
+            "bg_title": "Kontaktieren Sie mich",
+            "card": {
+                "address": "Adresse",
+                "phone": "Telefon"
+            },
+            "contact": {
+                "name": "Ihr vollständiger Name <b>*</b>",
+                "email": "Ihre E-Mail <b>*</b>",
+                "offer": "Ihr Angebot <b>*</b>",
+                "message": "Ihre Nachricht <b>*</b>",
+                "send": "Senden"
+            },
+            "snackbar": {
+                "send": "Nachricht gesendet",
+                "failed": "Nachricht nicht gesendet"
+            }
+        }
+    }
+}

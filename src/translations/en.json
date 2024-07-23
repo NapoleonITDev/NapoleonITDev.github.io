@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "home": {
+            "subtitle": "We are engaged in custom <s>development</s> and <s>automation</s>",
+            "data": {
+                "one": "years <s>experience</s>",
+                "two": "completed <s>projects</s>",
+                "three": "unique <s>clients</s>"
+            },
+            "text": {
+                "1": "We will develop any web application using <b>Django</b> and <b>React</b>",
+                "2": "Develop <b>CI / CD</b> and deploy infrastructure",
+                "3": "Cover the project with automated tests <b>(E2E, Integration and Unit)</b>",
+                "4": "Add common test modules, mocks, and services for testing"
+            },
+            "bg_title": "Development"
+        },
+        "services": {
+            "title": "What are we doing",
+            "subtitle": "Our <s>services</s>",
+            "pricing": "See Pricing",
+            "bg_title": "Services"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "Our <s>Orders</s>",
+            "bg_title": "Portfolio",
+            "items": {
+                "pricing": "See Pricing"
+            }
+        },
+        "testimonials": {
+            "title": "Reviews",
+            "subtitle": "Our <s>Feedback</s>",
+            "bg_title": "Reviews"
+        },
+        "data": {
+            "header": {
+                "home": "Home",
+                "services": "Services",
+                "portfolio": "Portfolio",
+                "testimonials": "Testimonials",
+                "pricing": "Pricing",
+                "blog": "Blog",
+                "contact": "Contact"
+            }
+        },
+        "pricing": {
+            "title": "Pricing",
+            "subtitle": "Our <s>Cost</s>",
+            "label": "Popular",
+            "bg_title": "Pricing",
+            "btn": "Start Project"
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Our <s>Articles</s>",
+            "bg_title": "Blog",
+            "link": "Read more"
+        },
+        "contacts": {
+            "title": "Contacts",
+            "subtitle": "Tell me <s>Your request</s>",
+            "bg_title": "Contact with me",
+            "card": {
+                "address": "Address",
+                "phone": "Phone"
+            },
+            "contact": {
+                "name": "Your Full Name <b>*</b>",
+                "email": "Your Email <b>*</b>",
+                "offer": "Your Offer <b>*</b>",
+                "message": "Your message <b>*</b>",
+                "send": "Send"
+            },
+            "snackbar": {
+                "send": "Message sent",
+                "failed": "Message not sent"
+            }
+        }
+    }
+}

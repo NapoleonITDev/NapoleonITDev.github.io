@@ -1,0 +1,82 @@
+{
+    "translation": {
+        "home": {
+            "subtitle": "Nous nous occupons de <s>développement</s> et d’<s>automatisation</s>",
+            "data": {
+                "one": "années <s>d'expérience</s>",
+                "two": "<s>projets</s> réalisés",
+                "three": "<s>clients</s> uniques"
+            },
+            "text": {
+                "1": "Nous développerons toute application web avec <b>Django</b> et <b>React</b>",
+                "2": "Développer <b>CI / CD</b> et déployer l'infrastructure",
+                "3": "Couvrir le projet avec des tests automatisés <b>(E2E, Intégration et Unit)</b>",
+                "4": "Ajouter des modules de test communs, des mocks et des services pour les tests"
+            },
+            "bg_title": "Développement"
+        },
+        "services": {
+            "title": "Que faisons-nous",
+            "subtitle": "Nos <s>services</s>",
+            "pricing": "Voir Les Tarifs",
+            "bg_title": "Services"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "subtitle": "Nos <s>Commandes</s>",
+            "bg_title": "Portfolio",
+            "items": {
+                "pricing": "Voir Les Tarifs"
+            }
+        },
+        "testimonials": {
+            "title": "Avis",
+            "subtitle": "Nos <s>Retours</s>",
+            "bg_title": "Avis"
+        },
+        "data": {
+            "header": {
+                "home": "Accueil",
+                "services": "Services",
+                "portfolio": "Portfolio",
+                "testimonials": "Témoignages",
+                "pricing": "Tarifs",
+                "blog": "Blog",
+                "contact": "Contact"
+            }
+        },
+        "pricing": {
+            "title": "Tarifs",
+            "subtitle": "Nos <s>Coûts</s>",
+            "label": "Populaire",
+            "bg_title": "Tarifs",
+            "btn": "Démarrer le projet"
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Nos <s>Articles</s>",
+            "bg_title": "Blog",
+            "link": "En savoir plus"
+        },
+        "contacts": {
+            "title": "Contacts",
+            "subtitle": "Dites-moi <s>votre demande</s>",
+            "bg_title": "Contactez-moi",
+            "card": {
+                "address": "Adresse",
+                "phone": "Téléphone"
+            },
+            "contact": {
+                "name": "Votre nom complet <b>*</b>",
+                "email": "Votre e-mail <b>*</b>",
+                "offer": "Votre offre <b>*</b>",
+                "message": "Votre message <b>*</b>",
+                "send": "Envoyer"
+            },
+            "snackbar": {
+                "send": "Message envoyé",
+                "failed": "Message non envoyé"
+            }
+        }
+    }
+}
