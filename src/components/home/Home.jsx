@@ -11,13 +11,7 @@ import './home.css';
 export const Home = () => {
     const { t } = useTranslation();
 
-    const { ref: shapeOneRef, inView: shapeOneInView } = useInView({ triggerOnce: false });
-    const { ref: shapeTwoRef, inView: shapeTwoInView } = useInView({ triggerOnce: false });
-    const { ref: shapeThreeRef, inView: shapeThreeInView } = useInView({ triggerOnce: false });
-    const { ref: bannerRef, inView: bannerInView } = useInView({ triggerOnce: false });
-    const { ref: dataOneRef, inView: dataOneInView } = useInView({ triggerOnce: false });
-    const { ref: dataTwoRef, inView: dataTwoInView } = useInView({ triggerOnce: false });
-    const { ref: dataThreeRef, inView: dataThreeInView } = useInView({ triggerOnce: false });
+    const { ref, inView } = useInView({ triggerOnce: false });
 
     return (
         <section className='home' id='home'>
@@ -31,48 +25,48 @@ export const Home = () => {
                     </h1>
                     <div className='home__img-wrapper'>
                         <motion.img
-                            ref={shapeOneRef}
+                            ref={ref}
                             src={shapeOne}
                             alt=''
                             className='shape shape__1'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={shapeOneInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                             transition={{ delay: 0, duration: 0.8, ease: "easeOut" }}
                         />
                         <motion.img
-                            ref={shapeTwoRef}
+                            ref={ref}
                             src={shapeTwo}
                             alt=''
                             className='shape shape__2'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={shapeTwoInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
                         />
                         <motion.img
-                            ref={shapeThreeRef}
+                            ref={ref}
                             src={shapeTwo}
                             alt=''
                             className='shape shape__3'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={shapeThreeInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                             transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
                         />
 
                         <motion.div
-                            ref={bannerRef}
+                            ref={ref}
                             className='home__banner'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={bannerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
                         >
                             <img src={profileImg} alt='' className='home__profile' />
                         </motion.div>
 
                         <motion.p
-                            ref={dataOneRef}
+                            ref={ref}
                             className='home__data home__data-one'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={dataOneInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 0.6, duration: 0.8, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
@@ -83,10 +77,10 @@ export const Home = () => {
                             </span>
                         </motion.p>
                         <motion.p
-                            ref={dataTwoRef}
+                            ref={ref}
                             className='home__data home__data-two'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={dataTwoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 0.8, duration: 0.8, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
@@ -97,10 +91,10 @@ export const Home = () => {
                             </span>
                         </motion.p>
                         <motion.p
-                            ref={dataThreeRef}
+                            ref={ref}
                             className='home__data home__data-three'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={dataThreeInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 1, duration: 0.8, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
