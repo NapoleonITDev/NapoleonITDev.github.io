@@ -19,7 +19,7 @@ const Footer = () => {
                 &copy; 2023 <span>Napoleon IT Dev</span>. All Rights Reserved
             </p>
             <p className="footer__copyright text-cs">
-                Developed by <span>Nikita Permyakov</span>
+                Developed by <span>Nikita Permiakov</span>
             </p>
         </div>
     </footer>

@@ -97,7 +97,7 @@ const Contact = () => {
                             <FaRegUser />
                         </span>
                         <h3 className="contact__card-title">CEO</h3>
-                        <p className="contact__card-data">Nikita Permikov</p>
+                        <p className="contact__card-data">Nikita Permiakov</p>
                     </motion.div>
                     <motion.div
                         ref={ref}
