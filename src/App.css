@@ -48,9 +48,9 @@
 .light-theme {
     --title-color: hsl(255, 0%, 0%);
     --text-color: hsl(255, 0%, 5%);
-    --bg-color: hsl(40, 20%, 85%);
+    --bg-color: hsl(35, 15%, 90%);
     --bg-color-alt: hsl(45, 10%, 80%);
-    --container-color: hsl(35, 15%, 90%);
+    --container-color: whitesmoke;
     --border-color: hsl(45, 5%, 35%);
 
     --shadow: 5px 5px rgb(0 0 0 / 20%);
