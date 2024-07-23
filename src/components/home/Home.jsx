@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../asserts/profile.png';
+import videoBg from '../../asserts/home.mp4';
 import shapeOne from '../../asserts/shape-1.png';
 import shapeTwo from '../../asserts/shape-2.png';
 import { FaFacebook, FaTelegram } from 'react-icons/fa';
@@ -59,7 +59,7 @@ export const Home = () => {
                             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
                         >
-                            <img src={profileImg} alt='' className='home__profile' />
+                            <video src={videoBg} autoPlay loop muted className='home__video' />
                         </motion.div>
 
                         <motion.p
