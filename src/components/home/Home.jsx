@@ -37,7 +37,7 @@ export const Home = () => {
                             className='shape shape__1'
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={shapeOneInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                            transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 0, duration: 1, ease: "easeOut" }}
                         />
                         <motion.img
                             ref={shapeTwoRef}
@@ -46,7 +46,7 @@ export const Home = () => {
                             className='shape shape__2'
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={shapeTwoInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                            transition={{ delay: 0.7, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
                         />
                         <motion.img
                             ref={shapeThreeRef}
@@ -55,7 +55,7 @@ export const Home = () => {
                             className='shape shape__3'
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={shapeThreeInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-                            transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 0.7, duration: 1, ease: "easeOut" }}
                         />
 
                         <motion.div
@@ -63,7 +63,7 @@ export const Home = () => {
                             className='home__banner'
                             initial={{ opacity: 0, y: 20 }}
                             animate={bannerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                            transition={{ delay: 1.2, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
                         >
                             <img src={profileImg} alt='' className='home__profile' />
                         </motion.div>
@@ -73,7 +73,7 @@ export const Home = () => {
                             className='home__data home__data-one'
                             initial={{ opacity: 0, y: 20 }}
                             animate={dataOneInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                            transition={{ delay: 1.5, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 1, duration: 1, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 8 <b>+</b>
@@ -87,7 +87,7 @@ export const Home = () => {
                             className='home__data home__data-two'
                             initial={{ opacity: 0, y: 20 }}
                             animate={dataTwoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                            transition={{ delay: 1.7, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 1.4, duration: 0.6, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 50 <b>+</b>
@@ -101,7 +101,7 @@ export const Home = () => {
                             className='home__data home__data-three'
                             initial={{ opacity: 0, y: 20 }}
                             animate={dataThreeInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                            transition={{ delay: 1.9, duration: 1, ease: "easeOut" }}
+                            transition={{ delay: 1.4, duration: 0.6, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 30 <b>+</b>
