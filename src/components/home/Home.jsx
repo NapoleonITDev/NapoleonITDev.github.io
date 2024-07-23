@@ -4,12 +4,20 @@ import shapeOne from '../../asserts/shape-1.png';
 import shapeTwo from '../../asserts/shape-2.png';
 import { FaFacebook, FaTelegram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import './home.css';
 import { useTranslation, Trans } from 'react-i18next';
-
+import { useInView } from 'react-intersection-observer';
+import './home.css';
 
 export const Home = () => {
-    const [t] = useTranslation();
+    const { t } = useTranslation();
+
+    const { ref: shapeOneRef, inView: shapeOneInView } = useInView({ triggerOnce: false });
+    const { ref: shapeTwoRef, inView: shapeTwoInView } = useInView({ triggerOnce: false });
+    const { ref: shapeThreeRef, inView: shapeThreeInView } = useInView({ triggerOnce: false });
+    const { ref: bannerRef, inView: bannerInView } = useInView({ triggerOnce: false });
+    const { ref: dataOneRef, inView: dataOneInView } = useInView({ triggerOnce: false });
+    const { ref: dataTwoRef, inView: dataTwoInView } = useInView({ triggerOnce: false });
+    const { ref: dataThreeRef, inView: dataThreeInView } = useInView({ triggerOnce: false });
 
     return (
         <section className='home' id='home'>
@@ -23,44 +31,49 @@ export const Home = () => {
                     </h1>
                     <div className='home__img-wrapper'>
                         <motion.img
+                            ref={shapeOneRef}
                             src={shapeOne}
                             alt=''
                             className='shape shape__1'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.5, duration: 1 }}
+                            animate={shapeOneInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
                         />
                         <motion.img
+                            ref={shapeTwoRef}
                             src={shapeTwo}
                             alt=''
                             className='shape shape__2'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.7, duration: 1 }}
+                            animate={shapeTwoInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            transition={{ delay: 0.7, duration: 1, ease: "easeOut" }}
                         />
                         <motion.img
+                            ref={shapeThreeRef}
                             src={shapeTwo}
                             alt=''
                             className='shape shape__3'
                             initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.9, duration: 1 }}
+                            animate={shapeThreeInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                            transition={{ delay: 0.9, duration: 1, ease: "easeOut" }}
                         />
 
                         <motion.div
+                            ref={bannerRef}
                             className='home__banner'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.2, duration: 1 }}
+                            animate={bannerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            transition={{ delay: 1.2, duration: 1, ease: "easeOut" }}
                         >
                             <img src={profileImg} alt='' className='home__profile' />
                         </motion.div>
 
                         <motion.p
+                            ref={dataOneRef}
                             className='home__data home__data-one'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.5, duration: 1 }}
+                            animate={dataOneInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            transition={{ delay: 1.5, duration: 1, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 8 <b>+</b>
@@ -70,10 +83,11 @@ export const Home = () => {
                             </span>
                         </motion.p>
                         <motion.p
+                            ref={dataTwoRef}
                             className='home__data home__data-two'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.7, duration: 1 }}
+                            animate={dataTwoInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            transition={{ delay: 1.7, duration: 1, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 50 <b>+</b>
@@ -83,10 +97,11 @@ export const Home = () => {
                             </span>
                         </motion.p>
                         <motion.p
+                            ref={dataThreeRef}
                             className='home__data home__data-three'
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.9, duration: 1 }}
+                            animate={dataThreeInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                            transition={{ delay: 1.9, duration: 1, ease: "easeOut" }}
                         >
                             <span className='text-lg'>
                                 30 <b>+</b>
