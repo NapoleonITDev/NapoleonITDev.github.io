@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import videoBg from '../../asserts/home.mp4';
 import shapeOne from '../../asserts/shape-1.png';
 import shapeTwo from '../../asserts/shape-2.png';
@@ -7,6 +7,26 @@ import { motion } from 'framer-motion';
 import { useTranslation, Trans } from 'react-i18next';
 import { useInView } from 'react-intersection-observer';
 import './home.css';
+
+
+function AutoPlaySilentVideo(props) {
+    const videoRef = useRef(undefined);
+    useEffect(() => {
+        videoRef.current.defaultMuted = true;
+    })
+    return (
+        <video
+            className={props.className}
+            ref={videoRef}
+            loop
+            autoPlay
+            muted
+            playsInline>
+            <source src={props.video} type="video/mp4"/>
+        </video>
+
+    );
+}
 
 export const Home = () => {
     const { t } = useTranslation();
@@ -59,7 +79,10 @@ export const Home = () => {
                             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                             transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
                         >
-                            <video src={videoBg} autoPlay loop muted className='home__video' />
+                            <AutoPlaySilentVideo
+                                video={videoBg}
+                                className="home__video"
+                            />
                         </motion.div>
 
                         <motion.p
