@@ -11,7 +11,9 @@ const BlogItem = ({ date, title, description, link, image }) => {
                 Read More
                 <FaArrowRight className="link__icon" />
             </a>
-            <img src={image} alt="" className="blog__img" />
+            <div className='blog__img-wrapper'>
+                <img src={image} alt="" className="blog__img" />
+            </div>
         </div>
     );
 };

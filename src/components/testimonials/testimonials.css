@@ -13,20 +13,18 @@
 .testimonial__img {
     height: 180px;
     width: 100%;
-    border-radius: 18px;
     object-fit: cover;
     margin-bottom: 30px;
     vertical-align: middle;
+    transition: all 0.6s var(--transition);
 }
 
-.testimonial__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 30px;
-    background: var(--container-color);
-    border-bottom-right-radius: 18px;
+.testimonial__img-wrapper {
+    overflow: hidden;
+}
+
+.testimonials__item:hover .testimonial__img {
+    transform: scale(1.04);
 }
 
 .testimonial__description {

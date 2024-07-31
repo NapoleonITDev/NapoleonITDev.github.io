@@ -1,7 +1,6 @@
 import React from "react";
 import shapeOne from "../../asserts/shape-1.png";
 import shapeTwo from "../../asserts/shape-2.png";
-import testimonialIcon from "../../asserts/testimonial-icon.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -46,10 +45,7 @@ const Testimonials = () => {
                             className="testimonials__item card card-one"
                             key={index}
                         >
-                            <div className="testimonial__header">
-                                <div className="testimonial__icon">
-                                    <img src={testimonialIcon} alt="" />
-                                </div>
+                            <div className="testimonial__header testimonial__img-wrapper">
                                 <img src={img} alt="" className="testimonial__img" />
                             </div>
                             <p className="testimonial__description">{description}</p>
