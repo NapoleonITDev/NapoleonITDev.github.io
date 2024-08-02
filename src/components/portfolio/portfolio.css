@@ -82,3 +82,14 @@
 .portfolio__description {
     min-height: 125px;
 }
+
+.portfolio__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.portfolio__items .link {
+    margin-top: auto;
+}
