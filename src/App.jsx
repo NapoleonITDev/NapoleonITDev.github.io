@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Onboarding from './components/onboarding/Onboarding';
 import Home from './components/home/Home';
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio';
@@ -15,6 +16,7 @@ function App() {
   return (
     <main className='main'>
       <Header />
+      <Onboarding />
       <Home />
       <Services />
       <Portfolio />
