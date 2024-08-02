@@ -1,0 +1,49 @@
+.onboarding {
+    position: relative;
+    overflow: hidden;
+}
+
+.onboarding__wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.onboarding__container {
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+
+.onboarding__title span {
+    color: var(--primary-color);
+}
+
+.onboarding__title {
+    color: #fff;
+    font-size: var(--biggest-font-size);
+    text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px 0 rgb(0 0 0 / 20%);
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.onboarding__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
