@@ -80,28 +80,56 @@ export const services = [
 export const projects = [
     {
         id: 1,
-        img: Project1,
+        imgs: {
+            primary: Project1,
+            secondary: [
+                Project1,
+                Project1,
+                Project1
+            ]
+        },
         category: 'Development',
         title: 'Companhia Portugueza Do Chá',
         description: 'E - Commerce Development. Online Store for Tea in Portugal'
     },
     {
         id: 2,
-        img: Project2,
+        imgs: {
+            primary: Project2,
+            secondary: [
+                Project1,
+                Project1,
+                Project1
+            ]
+        },
         category: 'Automation',
         title: 'Rambler Afisha',
         description: 'Automation of mobile application testing'
     },
     {
         id: 3,
-        img: Project3,
+        imgs: {
+            primary: Project3,
+            secondary: [
+                Project1,
+                Project1,
+                Project1
+            ]
+        },
         category: 'Utilities',
         title: 'News channel "Desporto em Portugal"',
         description: 'Bot, channel promotion for Facebook, Instagram and Telegram'
     },
     {
         id: 4,
-        img: Project4,
+        imgs: {
+            primary: Project4,
+            secondary: [
+                Project1,
+                Project1,
+                Project1
+            ]
+        },
         category: 'Development',
         title: 'Nikita Permiakov',
         description: 'Portfolio site for a programmer: nikit34.github.io'

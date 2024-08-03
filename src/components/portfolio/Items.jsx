@@ -1,16 +1,37 @@
-import React from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import shapeTwo from '../../asserts/shape-2.png';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { FaTimes } from 'react-icons/fa';
 
 
 const Items = ({ projectItems }) => {
     const [ t ] = useTranslation();
+
+    const dialogRef = useRef(undefined);
+    const [activeImage, setActiveImages] = useState(false);
+
+    useEffect(() => {
+        if ( !activeImage ) return;
+        dialogRef.current?.showModal();
+        document.body.style.overflow = 'hidden';
+        dialogRef.current?.addEventListener('close', closeDialog);
+        return () => {
+          dialogRef.current?.removeEventListener('close', closeDialog)
+        }
+    }, [activeImage]);
+
+    function closeDialog() {
+        dialogRef.current?.close();
+        setActiveImages(false);
+        document.body.style.overflow = '';
+    }
+
     return (
         <>
             {projectItems.map((projectItems) => {
-                const { id, img, category, title, description } = projectItems;
+                const { id, imgs, category, title, description } = projectItems;
                 return (
                     <motion.div
                         layout
@@ -21,8 +42,8 @@ const Items = ({ projectItems }) => {
                         className="portfolio__items card card-two"
                         key={id}
                     >
-                        <div className="portfolio__img-wrapper">
-                            <img src={img} alt="" className="portfolio__img" />
+                        <div className="portfolio__img-wrapper" onClick={() => setActiveImages(imgs)}>
+                            <img src={imgs.primary} alt="" className="portfolio__img" />
                         </div>
                         <span className="portfolio__category text-cs">{category}</span>
                         <h3 className="portfolio__title">{title}</h3>
@@ -35,6 +56,14 @@ const Items = ({ projectItems }) => {
                     </motion.div>
                 );
             })}
+            <dialog ref={dialogRef}>
+                {activeImage.primary && (
+                    <img src={activeImage.primary} alt="" />
+                )}
+                <button onClick={closeDialog} className="portfolio__img-close-btn">
+                    <FaTimes />
+                </button>
+            </dialog>
         </>
     );
 };

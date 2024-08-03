@@ -50,6 +50,10 @@
     overflow: hidden;
 }
 
+.portfolio__img-wrapper:hover {
+    cursor: pointer;
+}
+
 .portfolio__img {
     height: 240px;
     width: 100%;
@@ -92,4 +96,29 @@
 
 .portfolio__items .link {
     margin-top: auto;
+}
+
+.portfolio dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio__img-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    color: var(--border-color);
 }
