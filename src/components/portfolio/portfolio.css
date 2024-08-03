@@ -103,13 +103,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 90%;
+    width: 90vw;
+    height: auto;
+    max-height: 100vh;
     border: none;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .portfolio__img-close-btn {
