@@ -8,16 +8,27 @@ const Items = ({ projectItems }) => {
     const [t] = useTranslation();
 
     const dialogRef = useRef(null);
+    const dialogContainerRef = useRef(null);
     const [activeImage, setActiveImages] = useState(null);
 
     useEffect(() => {
         if (!activeImage) return;
         dialogRef.current?.showModal();
         document.body.style.overflow = 'hidden';
+
+        const handleClickOutside = (event) => {
+            if (dialogContainerRef.current && !dialogContainerRef.current.contains(event.target)) {
+                closeDialog();
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+
         dialogRef.current?.addEventListener('close', closeDialog);
         return () => {
-          dialogRef.current?.removeEventListener('close', closeDialog)
-        }
+            document.removeEventListener('mousedown', handleClickOutside);
+            dialogRef.current?.removeEventListener('close', closeDialog);
+        };
     }, [activeImage]);
 
     function closeDialog() {
@@ -55,12 +66,14 @@ const Items = ({ projectItems }) => {
                 );
             })}
             <dialog ref={dialogRef}>
-                {activeImage?.primary && (
-                    <img src={activeImage.primary} alt="" />
-                )}
-                <button onClick={closeDialog} className="portfolio__img-close-btn">
-                    <FaTimes />
-                </button>
+                <div ref={dialogContainerRef}>
+                    {activeImage?.primary && (
+                        <img src={activeImage.primary} alt="" />
+                    )}
+                    <button onClick={closeDialog} className="portfolio__img-close-btn">
+                        <FaTimes />
+                    </button>
+                </div>
             </dialog>
         </>
     );
