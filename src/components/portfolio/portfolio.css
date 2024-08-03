@@ -104,7 +104,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
-    height: auto;
     max-height: 100vh;
     border: none;
     border-radius: 10px;
