@@ -110,6 +110,10 @@
     overflow: hidden;
 }
 
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .portfolio__img-close-btn {
     position: absolute;
     top: 10px;

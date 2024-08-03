@@ -1,19 +1,17 @@
 import { useRef, useState, useEffect } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaTimes } from 'react-icons/fa';
 import shapeTwo from '../../asserts/shape-2.png';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaTimes } from 'react-icons/fa';
-
 
 const Items = ({ projectItems }) => {
-    const [ t ] = useTranslation();
+    const [t] = useTranslation();
 
-    const dialogRef = useRef(undefined);
-    const [activeImage, setActiveImages] = useState(false);
+    const dialogRef = useRef(null);
+    const [activeImage, setActiveImages] = useState(null);
 
     useEffect(() => {
-        if ( !activeImage ) return;
+        if (!activeImage) return;
         dialogRef.current?.showModal();
         document.body.style.overflow = 'hidden';
         dialogRef.current?.addEventListener('close', closeDialog);
@@ -24,14 +22,14 @@ const Items = ({ projectItems }) => {
 
     function closeDialog() {
         dialogRef.current?.close();
-        setActiveImages(false);
+        setActiveImages(null);
         document.body.style.overflow = '';
     }
 
     return (
         <>
-            {projectItems.map((projectItems) => {
-                const { id, imgs, category, title, description } = projectItems;
+            {projectItems.map((item) => {
+                const { id, imgs, category, title, description } = item;
                 return (
                     <motion.div
                         layout
@@ -50,14 +48,14 @@ const Items = ({ projectItems }) => {
                         <p className="portfolio__description">{description}</p>
                         <a href="#pricing" className="link">
                             {t('portfolio.items.pricing')}
-                            <FaArrowRight className='link__icon'></FaArrowRight>
+                            <FaArrowRight className='link__icon' />
                         </a>
                         <img src={shapeTwo} alt="" className="shape c__shape" />
                     </motion.div>
                 );
             })}
             <dialog ref={dialogRef}>
-                {activeImage.primary && (
+                {activeImage?.primary && (
                     <img src={activeImage.primary} alt="" />
                 )}
                 <button onClick={closeDialog} className="portfolio__img-close-btn">
