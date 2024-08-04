@@ -1,7 +1,33 @@
-import Project1 from './asserts/projects/Screenshot.png';
-import Project2 from './asserts/projects/Screenshot1.png';
-import Project3 from './asserts/projects/Screenshot2.png';
-import Project4 from './asserts/projects/Screenshot3.png';
+import PortfolioImg from './asserts/projects/portfolio/Screenshot.png';
+import PortfolioImg1 from './asserts/projects/portfolio/Screenshot1.png';
+import PortfolioImg2 from './asserts/projects/portfolio/Screenshot2.png';
+import PortfolioImg3 from './asserts/projects/portfolio/Screenshot3.png';
+import PortfolioImg4 from './asserts/projects/portfolio/Screenshot4.png';
+import PortfolioImg5 from './asserts/projects/portfolio/Screenshot5.png';
+import PortfolioImg6 from './asserts/projects/portfolio/Screenshot6.png';
+import PortfolioImg7 from './asserts/projects/portfolio/Screenshot7.png';
+import AutomationImg from './asserts/projects/automation/Screenshot.png';
+import AutomationImg1 from './asserts/projects/automation/Screenshot1.png';
+import AutomationImg2 from './asserts/projects/automation/Screenshot2.png';
+import AutomationImg3 from './asserts/projects/automation/Screenshot3.png';
+import AutomationImg4 from './asserts/projects/automation/Screenshot4.png';
+import AutomationImg5 from './asserts/projects/automation/Screenshot5.png';
+import AutomationImg6 from './asserts/projects/automation/Screenshot6.png';
+import AutomationImg7 from './asserts/projects/automation/Screenshot7.png';
+import AutomationImg8 from './asserts/projects/automation/Screenshot8.png';
+import TeashopImg from './asserts/projects/teashop/Screenshot.png';
+import TeashopImg1 from './asserts/projects/teashop/Screenshot1.png';
+import TeashopImg2 from './asserts/projects/teashop/Screenshot2.png';
+import TeashopImg3 from './asserts/projects/teashop/Screenshot3.png';
+import TeashopImg4 from './asserts/projects/teashop/Screenshot4.png';
+import TeashopImg5 from './asserts/projects/teashop/Screenshot5.png';
+import TeashopImg6 from './asserts/projects/teashop/Screenshot6.png';
+import TeashopImg7 from './asserts/projects/teashop/Screenshot7.png';
+import TeashopImg8 from './asserts/projects/teashop/Screenshot8.png';
+import TeashopImg9 from './asserts/projects/teashop/Screenshot9.png';
+import TeashopImg10 from './asserts/projects/teashop/Screenshot10.png';
+import FacebookBotImg from './asserts/projects/facebook_bot/Screenshot.png';
+import FacebookBotImg1 from './asserts/projects/facebook_bot/Screenshot1.png';
 import Blog1 from './asserts/blogs/blog.png';
 import Blog2 from './asserts/blogs/blog1.png';
 import Blog3 from './asserts/blogs/blog2.png';
@@ -80,28 +106,70 @@ export const services = [
 export const projects = [
     {
         id: 1,
-        img: Project1,
+        imgs: {
+            primary: TeashopImg,
+            secondary: [
+                TeashopImg1,
+                TeashopImg2,
+                TeashopImg3,
+                TeashopImg4,
+                TeashopImg5,
+                TeashopImg6,
+                TeashopImg7,
+                TeashopImg8,
+                TeashopImg9,
+                TeashopImg10
+            ]
+        },
         category: 'Development',
         title: 'Companhia Portugueza Do Chá',
         description: 'E - Commerce Development. Online Store for Tea in Portugal'
     },
     {
         id: 2,
-        img: Project2,
+        imgs: {
+            primary: AutomationImg,
+            secondary: [
+                AutomationImg1,
+                AutomationImg2,
+                AutomationImg3,
+                AutomationImg4,
+                AutomationImg5,
+                AutomationImg6,
+                AutomationImg7,
+                AutomationImg8
+            ]
+        },
         category: 'Automation',
         title: 'Rambler Afisha',
         description: 'Automation of mobile application testing'
     },
     {
         id: 3,
-        img: Project3,
+        imgs: {
+            primary: FacebookBotImg,
+            secondary: [
+                FacebookBotImg1
+            ]
+        },
         category: 'Utilities',
         title: 'News channel "Desporto em Portugal"',
         description: 'Bot, channel promotion for Facebook, Instagram and Telegram'
     },
     {
         id: 4,
-        img: Project4,
+        imgs: {
+            primary: PortfolioImg,
+            secondary: [
+                PortfolioImg1,
+                PortfolioImg2,
+                PortfolioImg3,
+                PortfolioImg4,
+                PortfolioImg5,
+                PortfolioImg6,
+                PortfolioImg7
+            ]
+        },
         category: 'Development',
         title: 'Nikita Permiakov',
         description: 'Portfolio site for a programmer: nikit34.github.io'
@@ -111,14 +179,14 @@ export const projects = [
 export const testimonials = [
     {
         id: 1,
-        img: Project1,
+        img: TeashopImg,
         author: 'Anastaia Omic',
         name: 'E - Commerce. Online Store for Tea in Portugal',
         description: 'From the very beginning, the team demonstrated a deep understanding of our needs and the market. The website design turned out to be modern and user-friendly, fully reflecting the spirit of our brand. The functionality of the site is top-notch: convenient search, simple order system, and integration with local payment systems have made our store very convenient for customers.'
     },
     {
         id: 2,
-        img: Project4,
+        img: PortfolioImg,
         author: 'Nikita Permiakov',
         name: 'Porfolio for developer',
         description: 'Particularly noteworthy is his professionalism and responsibility. Nikita was always available, promptly addressed any issues that arose, and provided detailed progress reports. His approach to testing and debugging code is especially commendable — everything was done efficiently and on time.'

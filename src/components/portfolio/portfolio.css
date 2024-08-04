@@ -45,6 +45,10 @@
     gap: 40px;
 }
 
+.portfolio__wrapper:hover {
+    cursor: pointer;
+}
+
 .portfolio__img-wrapper {
     border-radius: 18px;
     overflow: hidden;
@@ -81,4 +85,100 @@
 
 .portfolio__description {
     min-height: 125px;
+}
+
+.portfolio__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.portfolio__items .link {
+    margin-top: auto;
+}
+
+.portfolio dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-height: 90vh;
+    border: none;
+    overflow: hidden;
+    background: none;
+    user-select: none;
+}
+
+.portfolio dialog img {
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__close-btn {
+    top: 10px;
+    right: 10px;
+}
+
+.slider__side-btn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider__close-btn,
+.slider__side-btn {
+    position: absolute;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.slider__close-btn svg {
+    transform: translateY(2px);
+}
+
+.slider__side-btn svg {
+    transform: translate(1px, 2px);
+}
+
+.slider__side-btn.prev {
+    left: 10px;
+}
+
+.slider__side-btn.next {
+    right: 10px;
+}
+
+.slider__dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
 }
