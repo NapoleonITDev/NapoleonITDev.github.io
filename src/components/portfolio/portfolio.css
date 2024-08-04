@@ -108,6 +108,7 @@
     border: none;
     overflow: hidden;
     background: none;
+    user-select: none;
 }
 
 .portfolio dialog img {
@@ -118,7 +119,7 @@ dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.portfolio__img-close-btn {
+.slider__close-btn {
     top: 10px;
     right: 10px;
 }
