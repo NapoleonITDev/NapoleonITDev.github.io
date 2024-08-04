@@ -179,16 +179,16 @@ export const projects = [
 export const testimonials = [
     {
         id: 1,
-        img: TeashopImg,
         author: 'Anastaia Omic',
         name: 'E - Commerce. Online Store for Tea in Portugal',
+        date: '26.03.2024',
         description: 'From the very beginning, the team demonstrated a deep understanding of our needs and the market. The website design turned out to be modern and user-friendly, fully reflecting the spirit of our brand. The functionality of the site is top-notch: convenient search, simple order system, and integration with local payment systems have made our store very convenient for customers.'
     },
     {
         id: 2,
-        img: PortfolioImg,
         author: 'Nikita Permiakov',
         name: 'Porfolio for developer',
+        date: '13.10.2023',
         description: 'Particularly noteworthy is his professionalism and responsibility. Nikita was always available, promptly addressed any issues that arose, and provided detailed progress reports. His approach to testing and debugging code is especially commendable — everything was done efficiently and on time.'
     }
 ];

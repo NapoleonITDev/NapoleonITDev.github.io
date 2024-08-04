@@ -106,7 +106,7 @@
     row-gap: 40px;
   }
 
-  .resume__icon {
+  .testimonials__icon {
     width: 40px;
     height: 40px;
   }
@@ -273,15 +273,15 @@
     margin-right: 20px;
   }
 
-  .resume__header {
+  .testimonials__header {
     padding: 28px 24px;
   }
 
-  .resume__content {
+  .testimonials__content {
     padding-inline: 24px 30px;
   }
 
-  .resume__date-title {
+  .testimonials__date-author {
     flex-direction: column;
     align-self: flex-start;
     row-gap: 4px;
@@ -327,15 +327,11 @@
     height: 180px;
   }
 
-  .resume__header {
+  .testimonials__header {
     padding: 24px 18px;
   }
 
-  .resume__content {
+  .testimonials__content {
     padding-inline: 18px 20px;
-  }
-
-  .testimonial__img {
-    height: 140px;
   }
 }

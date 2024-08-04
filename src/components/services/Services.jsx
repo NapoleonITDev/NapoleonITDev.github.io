@@ -40,7 +40,7 @@ const Services = () => {
                     },
                 }}
                 modules={[Pagination]}
-                className="services__container container mySwiper">
+                className="services__container container">
                 {services.map(({name, title, description}, index) => {
                     return (
                         <SwiperSlide className="services__item card card-one" key={index}>
