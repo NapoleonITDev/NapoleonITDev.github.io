@@ -7,3 +7,8 @@ npm i
 ```
 npm run start
 ```
+
+### Deploy app
+```
+npm run deploy
+```
