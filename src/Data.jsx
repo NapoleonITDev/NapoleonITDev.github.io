@@ -1,7 +1,33 @@
 import PortfolioImg from './asserts/projects/portfolio/Screenshot.png';
+import PortfolioImg1 from './asserts/projects/portfolio/Screenshot1.png';
+import PortfolioImg2 from './asserts/projects/portfolio/Screenshot2.png';
+import PortfolioImg3 from './asserts/projects/portfolio/Screenshot3.png';
+import PortfolioImg4 from './asserts/projects/portfolio/Screenshot4.png';
+import PortfolioImg5 from './asserts/projects/portfolio/Screenshot5.png';
+import PortfolioImg6 from './asserts/projects/portfolio/Screenshot6.png';
+import PortfolioImg7 from './asserts/projects/portfolio/Screenshot7.png';
 import AutomationImg from './asserts/projects/automation/Screenshot.png';
+import AutomationImg1 from './asserts/projects/automation/Screenshot1.png';
+import AutomationImg2 from './asserts/projects/automation/Screenshot2.png';
+import AutomationImg3 from './asserts/projects/automation/Screenshot3.png';
+import AutomationImg4 from './asserts/projects/automation/Screenshot4.png';
+import AutomationImg5 from './asserts/projects/automation/Screenshot5.png';
+import AutomationImg6 from './asserts/projects/automation/Screenshot6.png';
+import AutomationImg7 from './asserts/projects/automation/Screenshot7.png';
+import AutomationImg8 from './asserts/projects/automation/Screenshot8.png';
 import TeashopImg from './asserts/projects/teashop/Screenshot.png';
+import TeashopImg1 from './asserts/projects/teashop/Screenshot1.png';
+import TeashopImg2 from './asserts/projects/teashop/Screenshot2.png';
+import TeashopImg3 from './asserts/projects/teashop/Screenshot3.png';
+import TeashopImg4 from './asserts/projects/teashop/Screenshot4.png';
+import TeashopImg5 from './asserts/projects/teashop/Screenshot5.png';
+import TeashopImg6 from './asserts/projects/teashop/Screenshot6.png';
+import TeashopImg7 from './asserts/projects/teashop/Screenshot7.png';
+import TeashopImg8 from './asserts/projects/teashop/Screenshot8.png';
+import TeashopImg9 from './asserts/projects/teashop/Screenshot9.png';
+import TeashopImg10 from './asserts/projects/teashop/Screenshot10.png';
 import FacebookBotImg from './asserts/projects/facebook_bot/Screenshot.png';
+import FacebookBotImg1 from './asserts/projects/facebook_bot/Screenshot1.png';
 import Blog1 from './asserts/blogs/blog.png';
 import Blog2 from './asserts/blogs/blog1.png';
 import Blog3 from './asserts/blogs/blog2.png';
@@ -83,6 +109,16 @@ export const projects = [
         imgs: {
             primary: TeashopImg,
             secondary: [
+                TeashopImg1,
+                TeashopImg2,
+                TeashopImg3,
+                TeashopImg4,
+                TeashopImg5,
+                TeashopImg6,
+                TeashopImg7,
+                TeashopImg8,
+                TeashopImg9,
+                TeashopImg10
             ]
         },
         category: 'Development',
@@ -94,7 +130,14 @@ export const projects = [
         imgs: {
             primary: AutomationImg,
             secondary: [
-
+                AutomationImg1,
+                AutomationImg2,
+                AutomationImg3,
+                AutomationImg4,
+                AutomationImg5,
+                AutomationImg6,
+                AutomationImg7,
+                AutomationImg8
             ]
         },
         category: 'Automation',
@@ -106,6 +149,7 @@ export const projects = [
         imgs: {
             primary: FacebookBotImg,
             secondary: [
+                FacebookBotImg1
             ]
         },
         category: 'Utilities',
@@ -117,6 +161,13 @@ export const projects = [
         imgs: {
             primary: PortfolioImg,
             secondary: [
+                PortfolioImg1,
+                PortfolioImg2,
+                PortfolioImg3,
+                PortfolioImg4,
+                PortfolioImg5,
+                PortfolioImg6,
+                PortfolioImg7
             ]
         },
         category: 'Development',
