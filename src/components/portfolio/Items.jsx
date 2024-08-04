@@ -101,7 +101,7 @@ const Items = ({ projectItems }) => {
                     ))}
                     <BtnSlider moveSlide={prevSlide} direction={"prev"} />
                     <BtnSlider moveSlide={nextSlide} direction={"next"} />
-                    <button onClick={closeDialog} className="portfolio__img-close-btn">
+                    <button onClick={closeDialog} className="slider__close-btn">
                         <FaTimes />
                     </button>
                 </div>

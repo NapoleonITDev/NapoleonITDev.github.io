@@ -123,13 +123,13 @@ dialog::backdrop {
     right: 10px;
 }
 
-.btn-slide {
+.slider__side-btn {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.portfolio__img-close-btn,
-.btn-slide {
+.slider__close-btn,
+.slider__side-btn {
     position: absolute;
     cursor: pointer;
     border: 2px solid var(--primary-color);
@@ -141,18 +141,18 @@ dialog::backdrop {
     font-size: 16px;
 }
 
-.portfolio__img-close-btn svg {
+.slider__close-btn svg {
     transform: translateY(2px);
 }
 
-.btn-slide svg {
+.slider__side-btn svg {
     transform: translate(1px, 2px);
 }
 
-.btn-slide.prev {
+.slider__side-btn.prev {
     left: 10px;
 }
 
-.btn-slide.next {
+.slider__side-btn.next {
     right: 10px;
 }

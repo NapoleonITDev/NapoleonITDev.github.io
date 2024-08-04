@@ -5,7 +5,7 @@ const BtnSlider = ({ moveSlide, direction }) => {
     return (
         <button
             onClick={moveSlide}
-            className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
+            className={direction === "next" ? "slider__side-btn next" : "slider__side-btn prev"}
         >
             {direction === "next" ? <FaArrowRight /> : <FaArrowLeft />}
         </button>
