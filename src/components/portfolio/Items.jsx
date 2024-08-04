@@ -77,18 +77,20 @@ const Items = ({ projectItems }) => {
                         className="portfolio__items card card-two"
                         key={id}
                     >
-                        <div className="portfolio__img-wrapper" onClick={() => {
+                        <div className="portfolio__wrapper" onClick={() => {
                             setActiveImages({
                                 primary: imgs.primary,
                                 allImages: [imgs.primary, ...imgs.secondary]
                             });
                             setSlideIndex(0);
                         }}>
-                            <img src={imgs.primary} alt="" className="portfolio__img" />
+                            <div className="portfolio__img-wrapper">
+                                <img src={imgs.primary} alt="" className="portfolio__img" />
+                            </div>
+                            <span className="portfolio__category text-cs">{category}</span>
+                            <h3 className="portfolio__title">{title}</h3>
+                            <p className="portfolio__description">{description}</p>
                         </div>
-                        <span className="portfolio__category text-cs">{category}</span>
-                        <h3 className="portfolio__title">{title}</h3>
-                        <p className="portfolio__description">{description}</p>
                         <a href="#pricing" className="link">
                             {t('portfolio.items.pricing')}
                             <FaArrowRight className='link__icon' />
