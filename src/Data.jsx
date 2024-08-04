@@ -1,7 +1,7 @@
-import Project1 from './asserts/projects/Screenshot.png';
-import Project2 from './asserts/projects/Screenshot1.png';
-import Project3 from './asserts/projects/Screenshot2.png';
-import Project4 from './asserts/projects/Screenshot3.png';
+import PortfolioImg from './asserts/projects/portfolio/Screenshot.png';
+import AutomationImg from './asserts/projects/automation/Screenshot.png';
+import TeashopImg from './asserts/projects/teashop/Screenshot.png';
+import FacebookBotImg from './asserts/projects/facebook_bot/Screenshot.png';
 import Blog1 from './asserts/blogs/blog.png';
 import Blog2 from './asserts/blogs/blog1.png';
 import Blog3 from './asserts/blogs/blog2.png';
@@ -81,12 +81,8 @@ export const projects = [
     {
         id: 1,
         imgs: {
-            primary: Project1,
+            primary: TeashopImg,
             secondary: [
-                Project1,
-                Project2,
-                Project3,
-                Project4
             ]
         },
         category: 'Development',
@@ -96,12 +92,9 @@ export const projects = [
     {
         id: 2,
         imgs: {
-            primary: Project2,
+            primary: AutomationImg,
             secondary: [
-                Project1,
-                Project2,
-                Project3,
-                Project4
+
             ]
         },
         category: 'Automation',
@@ -111,12 +104,8 @@ export const projects = [
     {
         id: 3,
         imgs: {
-            primary: Project3,
+            primary: FacebookBotImg,
             secondary: [
-                Project1,
-                Project2,
-                Project3,
-                Project4
             ]
         },
         category: 'Utilities',
@@ -126,12 +115,8 @@ export const projects = [
     {
         id: 4,
         imgs: {
-            primary: Project4,
+            primary: PortfolioImg,
             secondary: [
-                Project1,
-                Project2,
-                Project3,
-                Project4
             ]
         },
         category: 'Development',
@@ -143,14 +128,14 @@ export const projects = [
 export const testimonials = [
     {
         id: 1,
-        img: Project1,
+        img: TeashopImg,
         author: 'Anastaia Omic',
         name: 'E - Commerce. Online Store for Tea in Portugal',
         description: 'From the very beginning, the team demonstrated a deep understanding of our needs and the market. The website design turned out to be modern and user-friendly, fully reflecting the spirit of our brand. The functionality of the site is top-notch: convenient search, simple order system, and integration with local payment systems have made our store very convenient for customers.'
     },
     {
         id: 2,
-        img: Project4,
+        img: PortfolioImg,
         author: 'Nikita Permiakov',
         name: 'Porfolio for developer',
         description: 'Particularly noteworthy is his professionalism and responsibility. Nikita was always available, promptly addressed any issues that arose, and provided detailed progress reports. His approach to testing and debugging code is especially commendable — everything was done efficiently and on time.'
