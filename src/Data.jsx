@@ -84,8 +84,9 @@ export const projects = [
             primary: Project1,
             secondary: [
                 Project1,
-                Project1,
-                Project1
+                Project2,
+                Project3,
+                Project4
             ]
         },
         category: 'Development',
@@ -98,8 +99,9 @@ export const projects = [
             primary: Project2,
             secondary: [
                 Project1,
-                Project1,
-                Project1
+                Project2,
+                Project3,
+                Project4
             ]
         },
         category: 'Automation',
@@ -112,8 +114,9 @@ export const projects = [
             primary: Project3,
             secondary: [
                 Project1,
-                Project1,
-                Project1
+                Project2,
+                Project3,
+                Project4
             ]
         },
         category: 'Utilities',
@@ -126,8 +129,9 @@ export const projects = [
             primary: Project4,
             secondary: [
                 Project1,
-                Project1,
-                Project1
+                Project2,
+                Project3,
+                Project4
             ]
         },
         category: 'Development',

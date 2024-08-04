@@ -106,8 +106,12 @@
     width: 90vw;
     max-height: 90vh;
     border: none;
-    border-radius: 10px;
     overflow: hidden;
+    background: none;
+}
+
+.portfolio dialog img {
+    border-radius: 10px;
 }
 
 dialog::backdrop {
@@ -115,12 +119,40 @@ dialog::backdrop {
 }
 
 .portfolio__img-close-btn {
-    position: absolute;
     top: 10px;
     right: 10px;
-    border: none;
+}
+
+.btn-slide {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio__img-close-btn,
+.btn-slide {
+    position: absolute;
     cursor: pointer;
-    font-size: 24px;
-    background: none;
-    color: var(--border-color);
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.portfolio__img-close-btn svg {
+    transform: translateY(2px);
+}
+
+.btn-slide svg {
+    transform: translate(1px, 2px);
+}
+
+.btn-slide.prev {
+    left: 10px;
+}
+
+.btn-slide.next {
+    right: 10px;
 }

@@ -3,6 +3,7 @@ import { FaArrowRight, FaTimes } from 'react-icons/fa';
 import shapeTwo from '../../asserts/shape-2.png';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import BtnSlider from "./BtnSlider";
 
 const Items = ({ projectItems }) => {
     const [t] = useTranslation();
@@ -10,6 +11,7 @@ const Items = ({ projectItems }) => {
     const dialogRef = useRef(null);
     const dialogContainerRef = useRef(null);
     const [activeImage, setActiveImages] = useState(null);
+    const [slideIndex, setSlideIndex] = useState(0);
 
     useEffect(() => {
         if (!activeImage) return;
@@ -37,6 +39,26 @@ const Items = ({ projectItems }) => {
         document.body.style.overflow = '';
     }
 
+    const nextSlide = () => {
+        setSlideIndex((prevIndex) => {
+            const newIndex = prevIndex + 1;
+            if (newIndex >= (activeImage?.allImages.length || 0)) {
+                return 0;
+            }
+            return newIndex;
+        });
+    };
+
+    const prevSlide = () => {
+        setSlideIndex((prevIndex) => {
+            const newIndex = prevIndex - 1;
+            if (newIndex < 0) {
+                return (activeImage?.allImages.length || 0) - 1;
+            }
+            return newIndex;
+        });
+    };
+
     return (
         <>
             {projectItems.map((item) => {
@@ -51,7 +73,13 @@ const Items = ({ projectItems }) => {
                         className="portfolio__items card card-two"
                         key={id}
                     >
-                        <div className="portfolio__img-wrapper" onClick={() => setActiveImages(imgs)}>
+                        <div className="portfolio__img-wrapper" onClick={() => {
+                            setActiveImages({
+                                primary: imgs.primary,
+                                allImages: [imgs.primary, ...imgs.secondary]
+                            });
+                            setSlideIndex(0);
+                        }}>
                             <img src={imgs.primary} alt="" className="portfolio__img" />
                         </div>
                         <span className="portfolio__category text-cs">{category}</span>
@@ -67,9 +95,12 @@ const Items = ({ projectItems }) => {
             })}
             <dialog ref={dialogRef}>
                 <div ref={dialogContainerRef}>
-                    {activeImage?.primary && (
-                        <img src={activeImage.primary} alt="" />
-                    )}
+                    {activeImage && activeImage.allImages.map((img, index) => (
+                        slideIndex === index && <img src={img} alt="" />
+
+                    ))}
+                    <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+                    <BtnSlider moveSlide={nextSlide} direction={"next"} />
                     <button onClick={closeDialog} className="portfolio__img-close-btn">
                         <FaTimes />
                     </button>
