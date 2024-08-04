@@ -59,6 +59,10 @@ const Items = ({ projectItems }) => {
         });
     };
 
+    const moveDot = (index) => {
+        setSlideIndex(index);
+    };
+
     return (
         <>
             {projectItems.map((item) => {
@@ -104,6 +108,15 @@ const Items = ({ projectItems }) => {
                     <button onClick={closeDialog} className="slider__close-btn">
                         <FaTimes />
                     </button>
+                    <div className="slider__dots">
+                        {Array.from({length: activeImage?.allImages.length}).map((item, index) => (
+                            <div
+                                onClick={() => moveDot(index + 1)}
+                                className={slideIndex === index ? "dot active" : "dot"}
+                            >
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </dialog>
         </>
