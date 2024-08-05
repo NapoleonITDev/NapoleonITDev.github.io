@@ -257,6 +257,10 @@
   .portfolio__list-item::before {
     bottom: -8px;
   }
+
+  .pricing__item {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 576px) {

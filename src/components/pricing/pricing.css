@@ -8,6 +8,9 @@
 
 .pricing__item {
     border: 2px solid var(--container-color);
+    height: 620px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pricing__item:nth-child(2) {
@@ -88,6 +91,10 @@
 
 .pricing__item del {
     color: var(--border-color);
+}
+
+.pricing__btn {
+    margin-top: auto;
 }
 
 .pricing__btn::before {
