@@ -298,6 +298,11 @@
   .home__data-three {
     display: none;
   }
+
+  .testimonials__container {
+    margin-left: 16px;
+  }
+
 }
 
 @media screen and (max-width: 350px) {
