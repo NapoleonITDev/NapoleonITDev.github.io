@@ -82,7 +82,7 @@
 .light-theme .blog__item:hover .blog__date,
 .light-theme .blog__item:hover .blog__title,
 .light-theme .blog__item:hover .blog__description {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 html {
