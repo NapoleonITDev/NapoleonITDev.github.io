@@ -58,6 +58,11 @@
     border-radius: 1px;
     z-index: 2;
     padding: 5px 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
 }
 
 .blog__date {
@@ -84,6 +89,7 @@
     top: 50%;
     font-size: 1.2em;
     opacity: 0;
+    -webkit-line-clamp: 6;
 }
 
 .blog__item:hover .blog__title {
