@@ -15,7 +15,7 @@ const Blog = () => {
             <p className="section__subtitle">
                 <Trans i18nKey="blog.subtitle" components={{ s: <span /> }} />
             </p>
-            <div className="blog__container container grid">
+            <div className="blog__container grid">
                 {blogItems.map((item, index) => (
                     <BlogItem
                         key={index}
@@ -26,9 +26,6 @@ const Blog = () => {
                         image={item.image}
                     />
                 ))}
-            </div>
-            <div className='section__deco deco__right'>
-                <img src={shapeOne} alt='' className='shape' />
             </div>
             <div className="section__bg-wrapper">
                 <span className="bg__title">{t('blog.bg_title')}</span>

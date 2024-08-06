@@ -65,6 +65,26 @@
     color: rgba(0, 0, 0, 0.02);
 }
 
+.light-theme .blog__img-wrapper {
+    filter: blur(2px);
+}
+
+.light-theme .blog__item:hover .blog__img-wrapper {
+    filter: blur(0px);
+}
+
+.light-theme .blog__date,
+.light-theme .blog__title,
+.light-theme .blog__description {
+    background: rgba(255, 255, 255, 0.0);
+}
+
+.light-theme .blog__item:hover .blog__date,
+.light-theme .blog__item:hover .blog__title,
+.light-theme .blog__item:hover .blog__description {
+    background: rgba(255, 255, 255, 0.9);
+}
+
 html {
     scroll-behavior: smooth;
 }

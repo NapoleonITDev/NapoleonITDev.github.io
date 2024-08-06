@@ -92,8 +92,7 @@
 
   .skills__container,
   .portfolio__container,
-  .pricing__container,
-  .blog__container {
+  .pricing__container {
     gap: 30px;
   }
 
