@@ -47,6 +47,7 @@
   }
 
   .blog__description {
+    line-clamp: 2;
     -webkit-line-clamp: 4;
 }
 
