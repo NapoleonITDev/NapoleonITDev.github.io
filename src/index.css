@@ -46,7 +46,12 @@
     height: 300px;
   }
 
+  .blog__title {
+    font-size: 1.2em;
+  }
+
   .blog__description {
+    font-size: 1em;
     line-clamp: 2;
     -webkit-line-clamp: 4;
 }
