@@ -108,7 +108,6 @@
     border: none;
     overflow: hidden;
     background: none;
-    user-select: none;
 }
 
 .portfolio dialog img {

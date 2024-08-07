@@ -38,10 +38,23 @@
 
   .skills__container,
   .portfolio__container,
-  .pricing__container,
-  .blog__container {
+  .pricing__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .blog__item {
+    height: 300px;
+  }
+
+  .blog__title {
+    font-size: 1.2em;
+  }
+
+  .blog__description {
+    font-size: 1em;
+    line-clamp: 2;
+    -webkit-line-clamp: 4;
+}
 
   .footer__copyright:nth-child(2) {
     justify-self: start;
@@ -92,8 +105,7 @@
 
   .skills__container,
   .portfolio__container,
-  .pricing__container,
-  .blog__container {
+  .pricing__container {
     gap: 30px;
   }
 
