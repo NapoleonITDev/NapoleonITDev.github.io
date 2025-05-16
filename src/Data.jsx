@@ -31,6 +31,11 @@ import FacebookBotImg1 from './asserts/projects/facebook_bot/Screenshot1.png';
 import Blog1 from './asserts/blogs/blog.png';
 import Blog2 from './asserts/blogs/blog1.png';
 import Blog3 from './asserts/blogs/blog2.png';
+import Blog4 from './asserts/blogs/blog3.png';
+import Blog5 from './asserts/blogs/blog4.png';
+import Blog6 from './asserts/blogs/blog5.png';
+import Blog7 from './asserts/blogs/blog6.png';
+import Blog8 from './asserts/blogs/blog7.png';
 
 
 export const links = [
@@ -243,35 +248,35 @@ export const blogItems = [
         title: "Act 3: Love and Other Troubles",
         description: "Prologue: Our industrial holding company implemented a key ERP/CRM system that everyone loved, except for the data replication issues. In one branch, either the power would go out, the internet would fail, or a cleaner would reboot the servers at a critical moment.",
         link: "https://www.facebook.com/napoleon.it.dev/posts/pfbid0CsRmQCuKjPYvBffrPiJfJnMzjcqKVdmoKyPiqKeqELVabCtypczzURgprEs88sxNl",
-        image: "https://scontent.fopo3-1.fna.fbcdn.net/v/t39.30808-6/451960675_122102757728416891_2772710042666744093_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGXSxS5abcKl71z1SwmgdqU0TDmySADgtfRMObJIAOC106sO1r91OHnewBCCshJddg08pkyqLH7xPcAg7TIrdHa&_nc_ohc=pSvh850n4BsQ7kNvgHmrK3g&_nc_ht=scontent.fopo3-1.fna&cb_e2o_trans=q&oh=00_AYDD84LL9sPrYKASNOJ7H9-ct-xgsxgkJ0Kb7EgfrBJKAQ&oe=66B878DB"
+        image: Blog6
     },
     {
         date: "July 18, 2024",
         title: "Act 2: Happy Ending",
         description: "Prologue: Regional government. 1000 users, ministries, and municipalities. We won the contract over competitors. A six-month project with minimal profit and hopes for future development.",
         link: "https://www.facebook.com/napoleon.it.dev/posts/pfbid026Jq6HvPgmmYKPNUwWHf7Nu2Gvrs7V6ZRKQqujxfaXELBrMJqzmkUScNBNKaWZQXnl",
-        image: "https://scontent.fopo3-1.fna.fbcdn.net/v/t39.30808-6/451478741_122102412872416891_7643401120629455573_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFf0ROTz_R6MUj22OyEhwb41Swt9AB7557VLC30AHvnnjoqt1sJ5Md7mLr3QnuBFm-x91bzVT4ogEikNyOJumDJ&_nc_ohc=k-DJSAIJ10AQ7kNvgHKU9kG&_nc_ht=scontent.fopo3-1.fna&cb_e2o_trans=q&oh=00_AYCR3zOiF9bb5jowYc_KOotT8LbMX6Z3ou5JaZ4xApgIsA&oe=66B871FC"
+        image: Blog5
     },
     {
         date: "July 17, 2024",
         title: "Act 1: Kung-Fu Showdown",
         description: "Prologue: A major commercial company, catering to both Russian and international clients, seeks to automate processes under new management.",
         link: "https://www.facebook.com/napoleon.it.dev/posts/pfbid02aRmq6Zby3UbPJ8R14fmx6PX9B8dA7GmZ3Msu1kf15nEC7eo2zLWsvZSqpNU2pXkVl",
-        image: "https://scontent.fopo3-1.fna.fbcdn.net/v/t39.30808-6/451083585_122101900340416891_5042975252922839239_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHFvnvqHz09VCWEU9YOihlHm9DNwIWLbHeb0M3AhYtsd1M92tUkyJjFNH9ijjrbbqjIGQ8JN5FBbdQoi_J-0RiY&_nc_ohc=QLv9nVZF9kIQ7kNvgGOfeXN&_nc_ht=scontent.fopo3-1.fna&cb_e2o_trans=q&oh=00_AYDJjSFgV_QxzkmIlufCCWsVGwG4OhvAm9meW1UCL6GGWQ&oe=66B89075"
+        image: Blog4
     },
     {
         date: "July 16, 2024",
         title: "Design Process: How to Achieve Success in Design",
         description: "The design process is a methodology used by product designers to create digital products and services.",
         link: "https://www.facebook.com/napoleon.it.dev/posts/pfbid032FNXVkHRmqXhtudtSJd3RmqGy9jEt8PNrMo8ttHwskgu11kBZ2aiG47iqKEHPnLCl",
-        image: "https://scontent.fopo3-2.fna.fbcdn.net/v/t39.30808-6/451299078_122100895040416891_9094864706146019833_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF-1RURaWQvSlRzfcFd56xI9yhoo8lyLVr3KGijyXItWmA84ejEkXwd1lkC2KGLOaZ79mdaKP1peHH_QfvbJMKp&_nc_ohc=ITi_p2Iij4EQ7kNvgHT1cCX&_nc_ht=scontent.fopo3-2.fna&oh=00_AYCNN9JblTZWFlJZSaMpTQBiIIHrLJraTNBzVlNkXgn4Jg&oe=66B896DC"
+        image: Blog7
     },
     {
         date: "July 16, 2024",
         title: "The Emergence of APIs and the Transformation of the Banking Sector",
         description: "Many banks remain stuck in the past, serving clients exclusively through their branches or web and mobile channels. International ratings still focus on traditional services, missing the rapidly developing fintech trends.",
         link: "https://www.facebook.com/napoleon.it.dev/posts/pfbid02jQ3tn5AHoFEfh99tMU9hUUXJcTbXRr5Thk4K4dhonnj2bkpS3BibsqpPb6gS2GZ3l",
-        image: "https://scontent.fopo3-2.fna.fbcdn.net/v/t39.30808-6/451208459_122100877922416891_2982094990013558519_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF2NT4x3xql8MLsTHcQCrbC-GRFO67kG2r4ZEU7ruQbamMxg-iPcvGLeFitiLHqjVTbMHU_44g9zjXK4jwy-c5F&_nc_ohc=SuNXLP2Dg9YQ7kNvgEtyQWt&_nc_ht=scontent.fopo3-2.fna&oh=00_AYCIzjjPjjxgye35bAh70on2tEsw86xzLK3bIaIKUzzxdw&oe=66B89B05"
+        image: Blog8
     },
     {
         date: "July 02, 2024",
